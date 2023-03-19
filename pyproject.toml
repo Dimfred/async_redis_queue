@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "async-redis-queue"
+version = "0.1.0"
+description = ""
+authors = ["Dmitrij Vinokour <dimfred.1337@web.de>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "async_redis_queue"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+aioredis = {extras = ["hiredis"], version = "^2.0.1"}
+pydantic = "^1.10.6"
+ujson = "^5.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
